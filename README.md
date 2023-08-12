@@ -1,6 +1,5 @@
 # Fractals-Explorer
 Project that I did in my studies at 42Berlin, It's about exploring the beauty of fractals, more specifically the Mandelbrot and Julia sets.
-# Description
 
 <div style="max-width: 100%; overflow: hidden;">
   <img src="imgs/mandelbrot.gif" alt="Mandelbrot changing color" style="width: 70%; flex: 1;">
@@ -8,6 +7,7 @@ Project that I did in my studies at 42Berlin, It's about exploring the beauty of
   <img src="imgs/julia.gif" alt="Julia" style="width: 70%; flex: 1;">
 </div>
 
+# Description
 
 <h3>What is a fractal?</h3>
 <p>The term <b>fractal</b> was first used by mathematician Benoit Mandelbrot in 1974. He based
@@ -24,7 +24,8 @@ and deal with keyboard and mouse events.</p>
 <p>This will be the opportunity for you to get familiar with the <b>MiniLibX</b>, to discover
 or use the mathematical notion of <b>complex numbers</b>, to take a peek at the concept of
 <b>optimization in computer graphics</b> and practice <b>event handling</b>.</p>
-<h3>Install and Run</h3>
+
+# Install and Run
 *(tested on Ubuntu)*
 
 ```
@@ -48,5 +49,5 @@ cd ~/Fractol && make && ./fractol m
 ./fractol t
 ```
 
-<h3>Challenges that I faced</h3>
+# Challenges that I faced
 <p>At first it was really hard to imagine how fractals should be rendered overall. What I end up doing in the beginning was creating a line drawing function (<a href="https://en.wikipedia.org/wiki/Bresenham%27s_line_algorithm">Bresenham's line algorithm</a>), this turned out to be useless for the project so I deleted it and started it over. Then I found it difficult to translate complex number calculations (we were not allowed to use the <a href="https://pubs.opengroup.org/onlinepubs/009695399/basedefs/complex.h.html">complex.h</a>), but in the end the project turned out to be quite simple and took me 3-4 days to finish.
