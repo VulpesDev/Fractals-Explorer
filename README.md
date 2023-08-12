@@ -2,10 +2,10 @@
 Project that I did in my studies at 42Berlin, It's about exploring the beauty of fractals, more specifically the Mandelbrot and Julia sets.
 # Description
 
-<div style="max-width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 5px;">
-  <img src="imgs/mandelbrot.gif" alt="Mandelbrot changing color" style="width: 50%;">
-  <img src="imgs/mandelbrot_zoom.gif" alt="Mandelbrot zooming" style="width: 50%;">
-  <img src="imgs/julia.gif" alt="Julia" style="width: 50%;">
+<div style="max-width: 100%; overflow: hidden;">
+  <img src="imgs/mandelbrot.gif" alt="Mandelbrot changing color" style="width: 70%; flex: 1;">
+  <img src="imgs/mandelbrot_zoom.gif" alt="Mandelbrot zooming" style="width: 70%; flex: 1;">
+  <img src="imgs/julia.gif" alt="Julia" style="width: 70%; flex: 1;">
 </div>
 
 
