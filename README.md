@@ -1,6 +1,11 @@
 # Fractals-Explorer
 Project that I did in my studies at 42Berlin, It's about exploring the beauty of fractals, more specifically the Mandelbrot and Julia sets.
 # Description
+
+<div style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+  <img src="imgs/mandelbrot.gif" alt="Mandelbrot changing color" style="width: 50%;">
+</div>
+
 <h3>What is a fractal?</h3>
 <p>The term <b>fractal</b> was first used by mathematician Benoit Mandelbrot in 1974. He based
 it on the Latin word fractus which means "broken" or "fractured".
