@@ -15,6 +15,10 @@
 
 int	ft_putchari_fd(char c, int fd)
 {
-	write(fd, &c, sizeof(char));
+	ssize_t	write_result;
+
+	write_result = write(fd, &c, sizeof(char));
+	if (write_result == -1)
+		return (-1);
 	return (1);
 }

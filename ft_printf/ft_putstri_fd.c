@@ -15,14 +15,21 @@
 int	ft_putstri_fd(char *s, int fd)
 {
 	int	i;
+	ssize_t	write_result;
 
 	if (s == NULL)
 	{
-		write(1, "(null)", 6);
+		write_result = write(1, "(null)", 6);
+		if (write_result == -1)
+			return (-1);
 		return (6);
 	}
 	i = -1;
 	while (s[++i])
-		write(fd, &s[i], sizeof(char));
+	{
+		write_result = write(fd, &s[i], sizeof(char));
+		if (write_result == -1)
+			return (-1);
+	}
 	return (i);
 }
