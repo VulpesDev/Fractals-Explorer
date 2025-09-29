@@ -32,6 +32,11 @@ or use the mathematical notion of <b>complex numbers</b>, to take a peek at the 
 git clone https://github.com/VulpesDev/Fractals-Explorer.git ~/Fractol
 cd ~/Fractol && make && ./fractol m
 ```
+*(now available on as a nix flake too!)*
+```
+nix run github:VulpesDev/Fractals-Explorer/main -- m
+```
+
 <p>Different parameters to use</p>
 
 ```
