@@ -27,8 +27,12 @@ all: $(NAME)
 .c.o:
 	$(CC) -I/usr/include -Imlx_linux -O3 -c $< -o $@ -g
 
-$(NAME): $(OBJ)
+withlib: $(OBJ)
 	cd mlx_linux && ./configure
+	cd $(PRINTF_FOLDER) && make all
+	$(CC) $(OBJ) $(PRINTF_FOLDER)/libftprintf.a -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
+
+$(NAME): $(OBJ)
 	cd $(PRINTF_FOLDER) && make all
 	$(CC) $(OBJ) $(PRINTF_FOLDER)/libftprintf.a -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
 
